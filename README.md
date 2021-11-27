@@ -17,16 +17,16 @@ ods often propose complex networks with high memory and compute
 requirements. To address these limitations, we propose a simpler resid-
 ual based architecture in wavelet domain for faster and accurate video
 prediction. The natural sparsity of wavelet domain makes the learning
-task easier for the model. To the best of our knowledge, this is the rst
+task easier for the model. To the best of our knowledge, this is the first
 DL-based method that predicts future frames entirely in the wavelet
 domain. Our approach takes 2-dimensional Discrete Wavelet Transform
 (2D-DWT) sub-bands of video frames as input and learns to infer the
-dierence between the wavelet coecients of the adjacent frames (Tem-
+difference between the wavelet coeficients of the adjacent frames (Tem-
 poral Wavelet Residuals). Final prediction is obtained by adding the in-
 put to the predicted residuals followed by application of Inverse Discrete
 Wavelet Transform (IDWT). The sparsity of wavelet residuals reduces
 the training and inference time. Extensive experimentation demonstrates
-that the proposed approach is computationally ecient and still compet-
+that the proposed approach is computationally efficient and still compet-
 itive with the state-of-the-art methods both qualitatively and quantita-
 tively, on KTH and KITTI datasets.
 
@@ -39,10 +39,15 @@ tively, on KTH and KITTI datasets.
 ![image](https://user-images.githubusercontent.com/8327102/143667685-82b9c0fa-2f6e-49bf-9402-6300f6a0debc.png)
 
 # Dependencies
-Python == 3.5
+Python == 3.5 
+
 PyTorch == 1.1.0
+
 CUDA == 9.0
+
 CUDNN == 7.5.1
+
+PyWavelets == 1.0.0
 
 # Installation
 
