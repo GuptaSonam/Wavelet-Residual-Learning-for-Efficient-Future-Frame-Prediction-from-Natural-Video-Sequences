@@ -39,10 +39,14 @@ tively, on KTH and KITTI datasets.
 ![image](https://user-images.githubusercontent.com/8327102/143667685-82b9c0fa-2f6e-49bf-9402-6300f6a0debc.png)
 
 # Dependencies
-ToDo
+Python == 3.5
+PyTorch == 1.1.0
+CUDA == 9.0
+CUDNN == 7.5.1
 
 # Installation
-ToDo
+
+
 
 # Training and Evaluation
 ToDo
