@@ -59,7 +59,7 @@ PyWavelets == 1.0.0
 # Training
 To Train the network, use the following bas script after setting appropriate parameters:
 ```bash
-!predrnn_kth_IDWT_1branch_res.sh
+./predrnn_kth_IDWT_1branch_res.sh
 ```
 
 
