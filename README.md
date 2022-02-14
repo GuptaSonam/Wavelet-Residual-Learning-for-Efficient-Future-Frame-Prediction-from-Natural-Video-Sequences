@@ -21,14 +21,14 @@ task easier for the model. To the best of our knowledge, this is the first
 DL-based method that predicts future frames entirely in the wavelet
 domain. Our approach takes 2-dimensional Discrete Wavelet Transform
 (2D-DWT) sub-bands of video frames as input and learns to infer the
-difference between the wavelet coeficients of the adjacent frames (Tem-
-poral Wavelet Residuals). Final prediction is obtained by adding the in-
-put to the predicted residuals followed by application of Inverse Discrete
+difference between the wavelet coeficients of the adjacent frames (Temporal
+Wavelet Residuals). Final prediction is obtained by adding the input
+to the predicted residuals followed by application of Inverse Discrete
 Wavelet Transform (IDWT). The sparsity of wavelet residuals reduces
 the training and inference time. Extensive experimentation demonstrates
-that the proposed approach is computationally efficient and still compet-
-itive with the state-of-the-art methods both qualitatively and quantita-
-tively, on KTH and KITTI datasets.
+that the proposed approach is computationally efficient and still competitive
+with the state-of-the-art methods both qualitatively and quantitatively,
+on KTH and KITTI datasets.
 
 # Summary
 * First DL appraoch that predicts future frames in wavelet domain.
@@ -51,14 +51,29 @@ PyWavelets == 1.0.0
 
 # Installation
 
+- Install python 3.5 and other dependencies as mentioned above.
+- Download [KTH](https://www.csc.kth.se/cvap/actions/) Human Action Dataset. 
+
 
 
 # Training and Evaluation
-ToDo
+To Train the network, use the following bas script after setting appropriate parameters:
+```bash
+
+```
 
 
 # Citation
 If you find this work useful for your research, please use the following BibTeX entry to cite our paper.
+```
+@inproceedings{gupta2021g3an++,
+  title={Wavelet Residual Learning for Efficient Future Frame Prediction from Natural Video Sequences,
+  author={Gupta, Sonam and Das, Sukhendu},
+  booktitle={Proceedings of the 9th International Conference on Pattern Recognition and Machine Learning},
+  year={2021}
+}
+
+```
 
 
 
