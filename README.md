@@ -52,14 +52,14 @@ PyWavelets == 1.0.0
 # Installation
 
 - Install python 3.5 and other dependencies as mentioned above.
-- Download [KTH](https://www.csc.kth.se/cvap/actions/) Human Action Dataset. 
+- Download [KTH](https://www.csc.kth.se/cvap/actions/) Human Action Dataset and perform preprocessing as specifed in the paper.
 
 
 
-# Training and Evaluation
+# Training
 To Train the network, use the following bas script after setting appropriate parameters:
 ```bash
-
+!predrnn_kth_IDWT_1branch_res.sh
 ```
 
 
